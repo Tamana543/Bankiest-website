@@ -186,7 +186,7 @@ function lazyImgEng(entries, observer) {
 const imgObse = new IntersectionObserver(lazyImgEng, {
   root: null,
   threshold: 0,
-  rootMargin: '-150px',
+  rootMargin: '150px',
 });
 lazyImage.forEach(img => imgObse.observe(img));
 
