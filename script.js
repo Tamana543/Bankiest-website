@@ -142,7 +142,7 @@ navEl.addEventListener('mouseout', hoverEng.bind(1));
 const navHeight = navEl.getBoundingClientRect().height;
 const stickyNov = function (entries) {
   const [entry] = entries;
-  if (!entry.isIntersecting) {
+  if (!entry.isIntersecting && window.innerWidth > 700) {
     navEl.classList.add('sticky');
     navEl.style.left = '0px';
   } else navEl.classList.remove('sticky');
