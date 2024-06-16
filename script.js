@@ -224,6 +224,7 @@ function nextSlide() {
     currSlid++;
   }
   goToSlide(currSlid);
+  activeDot(currSlid);
 }
 function preSlide() {
   if (currSlid === 0) {
@@ -232,6 +233,7 @@ function preSlide() {
     currSlid--;
   }
   goToSlide(currSlid);
+  activeDot(currSlid);
 }
 function initFunc() {
   goToSlide(0);
