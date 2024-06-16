@@ -168,7 +168,7 @@ const sectionObser = new IntersectionObserver(revealSecEnj, {
 });
 allSections.forEach(function (sec) {
   sectionObser.observe(sec);
-  // sec.classList.add('section--hidden');
+  sec.classList.add('section--hidden');
 });
 
 // lazy Image
