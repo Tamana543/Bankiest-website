@@ -158,6 +158,7 @@ headerObserver.observe(header);
 // section animation
 const revealSecEnj = function (entries, observe) {
   const [entry] = entries;
+ 
   if (!entry.isIntersecting) return;
   entry.target.classList.remove('section--hidden');
   observe.unobserve(entry.target);
